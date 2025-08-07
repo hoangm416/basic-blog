@@ -1,0 +1,64 @@
+# Dockerignore - exclude files from Docker build context
+
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+DOCKER_README.md
+*.md
+
+# Logs
+log/*
+tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Runtime data
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Rails specific
+/storage/*
+!/storage/.keep
+/public/assets
+/public/packs
+/public/packs-test
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+# Test files
+test/
+spec/
+
+# Development files
+Vagrantfile
+docker-compose.override.yml
